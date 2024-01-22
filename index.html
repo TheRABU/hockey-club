@@ -24,8 +24,8 @@
       }
     </style>
   </head>
-  <body>
-    <header class="bg-theme-light font-manrope">
+  <body class="bg-theme-light font-manrope">
+    <header>
       <!--Navbar-->
       <nav class="py-4 lg:py-8">
         <div class="container mx-auto lg:px-16 px-8">
@@ -188,15 +188,18 @@
         <div class="container mx-auto lg:px-16 p-8">
           <div class="carousel bg-white">
             <!--Slide 1-->
-            <div id="slide1" class="carousel-item relative w-fit flex flex-col">
+            <div
+              id="slide1"
+              class="carousel-item relative w-fit flex flex-col sm:flex-row-reverse"
+            >
               <div class="py-1 lg:py-0">
                 <img src="./Images/1.png" class="w-full" />
               </div>
 
               <div
-                class="text-content items-center justify-center flex gap-6 p-8 sm:w-full lg:w-[470px] h-[100px] bg-[#131318] rounded-2xl"
+                class="absolute px-6 py-15 bottom-5 w-[400px] h-[100px] transform tranlate-x-[-50%] translate-y-[-50%] text-white flex flex-col justify-center items-start left-5 bg-[#131318] rounded-xl"
               >
-                <div class="absolute text-white">
+                <div class="text-white">
                   <h1 class="text3xl font-semibold">
                     Meet all the heroes from the field
                   </h1>
@@ -256,8 +259,9 @@
         </div>
       </section>
     </header>
-    <main class="container mx-auto">
-      <section class="hero font-manrope">
+    <main>
+      <!--TEXT PROFESSIONAL HOCKEY CLUB-->
+      <div class="hero font-manrope">
         <div
           class="sm:mb-0 lg:mb-6 w-full lg:w-4/6 text-center p-5 flex flex-col justify-center items-center"
         >
@@ -269,7 +273,7 @@
             natus distinctio earum fugit dolorum ex.
           </p>
         </div>
-      </section>
+      </div>
       <!--progress card section-->
       <section class="container mx-auto">
         <div
@@ -344,6 +348,120 @@
           </div>
         </div>
       </section>
+      <!--Program SECTION TEXT-->
+      <div class="hero font-manrope">
+        <div
+          class="sm:mb-0 lg:mb-6 w-full lg:w-4/6 text-center p-5 flex flex-col justify-center items-center"
+        >
+          <h1 class="text-xl lg:text-4xl mb-4 font-semibold text-[#131318]">
+            Program Sections
+          </h1>
+          <p class="text-[#13131899]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
+            natus distinctio earum fugit dolorum ex.
+          </p>
+        </div>
+      </div>
+      <!--PRGRAMS IMAGE GRID-->
+      <section class="container mx-auto sm:px-0 md:px-7 lg:px-16">
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-12 grid-rows-2 justify-center items-center cursor-pointer"
+        >
+          <!--Grid Image 1-->
+          <div
+            class="grid-item-1 junior-program relative h-auto text-center object-cover lg:col-span-6 sm:col-auto"
+          >
+            <div class="w-full h-full">
+              <img src="./Images/2.png" alt="" />
+
+              <div
+                class="sm:px-4 sm:py-4 lg:px-10 lg:py-20 absolute top-1/2 w-fit h-full lg:w-[570px] lg:h-[330px] transform tranlate-x-[-50%] translate-y-[-50%] text-white text-left flex flex-col justify-center items-start left-5"
+              >
+                <h3 class="text-3xl text-white font-semibold">
+                  Junior Program
+                </h3>
+                <p class="text-white text-xl mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, quo!
+                </p>
+
+                <button
+                  class="px-3 lg:px-5 text-white text-xl font-semibold py-2 lg:py-3 rounded-xl bg-[#FF4240]"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Grid Image 2-->
+          <div
+            class="grid-item-2 teenager-program relative h-auto text-center object-cover lg:col-span-6 sm:col-auto"
+          >
+            <div class="w-full h-full">
+              <img src="./Images/3.png" alt="" />
+
+              <div
+                class="sm:px-4 sm:py-4 lg:px-10 lg:py-20 absolute top-1/2 w-fit h-full lg:w-[570px] lg:h-[330px] transform tranlate-x-[-50%] translate-y-[-50%] text-white text-left flex flex-col justify-center items-start left-5"
+              >
+                <h3 class="text-3xl text-white font-semibold">
+                  Teenager Program
+                </h3>
+                <p class="text-white text-xl mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, quo!
+                </p>
+
+                <button
+                  class="px-3 lg:px-5 text-white text-xl font-semibold py-2 lg:py-3 rounded-xl bg-[#FF4240]"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Grid Image 3-->
+          <div
+            class="grid-item-3 professional-program relative h-auto text-center object-cover lg:col-span-12 sm:col-auto"
+          >
+            <div class="w-full h-full">
+              <img src="./Images/4.png" alt="" />
+
+              <div
+                class="sm:px-4 sm:py-4 lg:px-10 lg:py-20 absolute top-1/2 w-fit h-full lg:w-[570px] lg:h-[330px] transform tranlate-x-[-50%] translate-y-[-50%] text-white text-left flex flex-col justify-center items-start left-5"
+              >
+                <h3 class="text-3xl text-white font-semibold">
+                  Professional Program
+                </h3>
+                <p class="text-white text-xl mb-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, quo!
+                </p>
+
+                <button
+                  class="px-3 lg:px-5 text-white text-xl font-semibold py-2 lg:py-3 rounded-xl bg-[#FF4240]"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--New Products card section-->
+
+      <div class="hero font-manrope">
+        <div
+          class="sm:mt-0 lg:mt-14 w-full lg:w-4/6 text-center p-5 flex flex-col justify-center items-center"
+        >
+          <h1 class="text-xl lg:text-4xl mb-4 font-semibold text-[#131318]">
+            Our New Products
+          </h1>
+          <p class="text-[#13131899]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
+            natus distinctio earum fugit dolorum ex.
+          </p>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
